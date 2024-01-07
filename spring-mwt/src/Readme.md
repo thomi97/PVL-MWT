@@ -1,15 +1,16 @@
+# HINT
+### There might be an issue with the delete function, u sometimes have to reload the page after adding a new apartment
+(couldn't fix it yet unfortunately)
+
+
 ## Requirements
-install and run docker and maven
-
-## build docker image
-mvn install
-
-## run docker image
-execute Dockerfile
+install docker and maven
 
 ## create network
 docker network create mynet
 
 ## run docker-compose
-execute docker-compose.yml
+run the docker-compose.yml file in the root directory
+
+
 

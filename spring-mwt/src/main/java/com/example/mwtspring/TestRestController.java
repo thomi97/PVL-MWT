@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/apartments")
+@CrossOrigin(origins = "*")
 public class TestRestController {
 
     private final ApartmentService apartmentService;
@@ -28,7 +29,7 @@ public class TestRestController {
         List<String> returnList;
 
         if (apartmentList.isEmpty())
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.ok(List.of());
         else
             returnList = apartmentList.stream()
                     .map(Apartment::getApartmentName)
